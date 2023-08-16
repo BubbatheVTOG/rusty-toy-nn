@@ -1,4 +1,5 @@
 mod math;
+mod nn;
 use crate::math::MathOps;
 
 fn main() {
@@ -29,7 +30,6 @@ fn main() {
 
     let identity = Matrix::identity(3);
     println!("Identity Matrix:\n{}", identity);
-    */
 
     let z = math::Matrix {
         data: vec![vec![0.0;2], vec![0.0;2], vec![0.0;2]],
@@ -48,4 +48,7 @@ fn main() {
     println!("Matrix Z:\n{}",z);
     let res = y.dot_product(&z);
     println!("Dot Product Y * Z:\n{}", res);
+    */
+
+    let nn = nn::new();
 }

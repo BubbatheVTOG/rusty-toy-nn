@@ -81,7 +81,7 @@ impl MathOps<&Matrix, Matrix> for Matrix {
 }
 
 impl Matrix {
-    fn new(rows: usize, cols: usize) -> Matrix {
+    pub fn new(rows: usize, cols: usize) -> Matrix {
         Matrix {
             data: vec![vec![0.0; cols]; rows],
         }
